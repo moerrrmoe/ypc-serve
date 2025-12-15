@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Skip if the requested file is exactly doc.html
+RewriteCond %{REQUEST_URI} !^/doc\.html$
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
