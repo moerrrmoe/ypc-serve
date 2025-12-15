@@ -22,7 +22,7 @@ class Card{
                     <p class='fs-4'>".$this->title."</p>
                 </div>
             </div>
-            </div>
+            </div>hh
             "
         );
     }
